@@ -1,0 +1,28 @@
+modules:
+  macro:
+    - key: confluence-divider
+      resource: main
+      resolver:
+        function: resolver
+      title: confluence-divider-custom-ui
+      description: Custom dividers for Confluence Cloud
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/custom-divider/build
+app:
+  id: ari:cloud:ecosystem::app/3946e69b-2599-4d7f-8b65-abc66ec074aa
+permissions:
+  scopes:
+    - read:content-details:confluence
+    - read:content.property:confluence
+    - write:content.property:confluence
+    - write:confluence-content
+    - write:confluence-space
+    - read:confluence-content.all
+    - read:confluence-content.summary
+    - read:confluence-space.summary
+    - read:confluence-props
+    - write:confluence-props

@@ -1,0 +1,143 @@
+/* divider */
+/* html, body {
+    background-color: pink;
+    font-weight: 900;
+    position: fixed;
+} */
+
+/* @import 'https://fonts.googleapis.com/css?family=Lily+Script+One'; */
+body {
+    /*   background: #000; */
+    font-family: "Verdana";
+    /*   color: #fff; */
+  }
+  
+  #divider {
+    background-color: #bcf493;
+    /*   border: 1.5px solid gray; */
+    cursor: default;
+    font-weight: 900;
+    text-decoration: none;
+    /* background-image: url('./img/galaxy.jpg'); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 10px;
+    width: max-content;
+    height: max-content;
+    font-size: 7px;
+    vertical-align: middle;
+    margin-top: 5em;
+    /* width: 50px; */
+  }
+  
+  .selection,
+  #input-pattern {
+    display: none;
+  }
+  
+  #input-pattern {
+    margin-left: 3em;
+  }
+  
+  input#height,
+  input#font-size {
+    display: inline-block;
+    width: 3em;
+  }
+  input#multiplier {
+    width: 3em;
+  }
+  
+  /* input#hex-color, input#color-picker { */
+  .color-selector,
+  #img-file-selector {
+    /* margin-top: 1em; */
+    display: block;
+    /* text-align: center;
+    justify-content: center; */
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  
+  #pattern-str {
+    padding-left: 2em;
+  }
+  
+  form,
+  h3 {
+    text-align: center;
+    /*   margin: 0 auto; */
+    /*   justify-contents: center; */
+  }
+  
+  form {
+    margin-top: -0.5em;
+  }
+  
+  #img-file-selector {
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+  
+  #img-uploader {
+    margin-top: 1em;
+  }
+  
+  h3 {
+    color: dodgerblue;
+    letter-spacing: 0.03em;
+    font-weight: 900;
+    font-size: 2em;
+    font-family: Marker Felt;
+    /*   margin-top: -1px; */
+  }
+  
+  #container {
+    border: 20px solid transparent;
+    padding: 15px;
+    margin-top: 2em;
+  /*   border-image: url("https://www.w3schools.com/Css/border.png") 20% round; */
+  /* Border glitter   */
+        border-image: url("./img/glitter.gif'") 20% round; 
+  /*   border-image: url('https://img.lovepik.com/element/40164/2665.png_860.png') 20% round; */
+    /*   border-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg1.picmix.com%2Foutput%2Fstamp%2Fnormal%2F9%2F3%2F0%2F8%2F278039_b1e16.gif&f=1&nofb=1&ipt=531f44c28b31c901e03688b5723b7e9035db0028dbb2b0537a07f26068b4b8c1&ipo=images") */
+    background-color: #000;
+    color: #000;
+      /* background-image: url('https://images.unsplash.com/photo-1483401757487-2ced3fa77952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZGFyayUyMG5pZ2h0JTIwc2t5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60'); */
+  /*   background-image: url("https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGFzdGVsJTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60"); */
+    /* Created with https://www.css-gradient.com */
+    background: #eda8cc;
+    background: -webkit-linear-gradient(top left, #eda8cc, #e5f8fb);
+    background: -moz-linear-gradient(top left, #eda8cc, #e5f8fb);
+    background: linear-gradient(to bottom right, #eda8cc, #e5f8fb);
+    /* Created with https://www.css-gradient.com */
+  /* background: #AEEDA8;
+  background: -webkit-linear-gradient(top left, #AEEDA8, #13DC6D);
+  background: -moz-linear-gradient(top left, #AEEDA8, #13DC6D);
+  background: linear-gradient(to bottom right, #AEEDA8, #13DC6D); */
+  }
+  
+  /* input#hex-color {
+    display: inline-block !important;
+  } */
+  
+  /* Color Picker */
+  
+  form {
+    padding-bottom: 1em;
+  }
+  
+  /* #text-color, #font-size, #multiplier{
+    font-weight: 600;
+  } */
+  
+  #info {
+    color: gray;
+    font-weight: 600;
+    margin-top: 2em;
+  }
+  #info>span {
+    color: #6a6969;
+    font-size:1.2em;
+  }

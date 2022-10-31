@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Confluence Dividers</title>
+</head>
+
+<body>
+
+  <div data-role="main" class="ui-content">
+    <div id='divider'>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+    <!-- INPUT FORM -->
+    <div id="container">
+      <h3>Divider Designer</h3>
+      <form name="form1">
+        <input type="radio" id="solid" name="divider_style" value="Solid">
+        <label for="solid">Solid</label>
+        <input type="radio" id="patterned" name="divider_style" value="Patterned">
+        <label for="patterned">Pattern</label>
+        <div id="input-pattern">
+          <label for="pattern">Pattern Text: </label>
+          <input type="text" id="pattern" name="pattern"><br>
+        </div>
+
+        <div id="color-selector">
+          <label for="bg-color"><b>Enter background color:<b> </label> <input type="text" id="bg-color" name="bg" placeholder="#BCF493">
+          <!-- Color Picker -->
+          <input id="bg-color-picker" type="color" value="#bcf493" />
+          <!--           oninput="updateColorText(this.value)" -->
+          <br>
+          <label for="text-color"><b>Enter font color:<b> </label> <input type="text" id="text-color" name="text-color" placeholder="#000">
+
+          <!-- Color Picker -->
+          <input id="color-picker" type="color" value="#1f7d52" oninput="updateColorText(this.value)" />
+        </div> <br>
+
+        <label for="font-size"><b>Font size:<b> </label> <input id='font-size' type="number" name="font-size" value="10" min="1" max="30">
+        <label for="height">Height: </label> <input id='height' type="number" name="height" value="10" min="1" max="30">
+        <label for="multiplier">Multiplier: </label> <input type="number" id="multiplier" name="multiplier" width="18" value="10">
+
+        <!-- File Selector -->
+        <input id='img-file-selector' type=file name=filename id=file accept="image/*">
+        <button id='img-uploader' type=button>Set Custom Image</button><br>
+        <p id='info'>Press <span>ctrl + 1</span> to hide + show editor</p>
+      </form>
+    </div>
+    <!-- POPUP DIALOG -->
+    <!-- <div data-role="popup" id="myPopupDialog">
+      <div data-role="header">
+        <h1>Choose a divider style:</h1>
+      </div>
+
+      <div data-role="main" class="selection">
+        <ul>
+            <li>Custom - Make your own!</li>
+        </ul>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Exit</a>
+      </div>
+    </div> -->
+  </div>
+  <!-- <div class="dropdown">
+      <button class="dropbtn">🔽</button>
+      <div class="dropdown-content">
+      </div>
+    </div> -->
+  <!-- <div class="card">
+      <div class="content">
+        <div class="front">
+          Front
+        </div>
+        <div class="back">
+          Back!
+        </div>
+      </div>
+    </div> -->
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <script src="./jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./index.js"></script>
+  <div id="root"></div>
+</body>
+
+</html>
